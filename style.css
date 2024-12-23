@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFDF3;
+    overflow-y: auto;
+    transition: padding 0.3s ease;
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 12px 120px;
+    border-style: solid;
+    border-color: #3A35411F;
+    border-width: 1px;
+    transition: all 0.3s ease;
+    overflow-y: hidden;
+}
+
+.Logo {
+    padding: 12px 120px;
+}
+
+.Login {    
+    padding: 36px;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #F1F1F1;
+    margin-top: 100px;
+    margin-bottom: 40px; 
+    width: 590px;
+    height: auto;   
+    background-color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+.Desc h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #222325;
+}
+
+.Desc h3 {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333AD;
+    font-weight: normal;
+}
+
+.Desc h1,
+.Desc h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.Form {
+    padding: 24px 0;
+}
+
+.Email p, .Password p {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #4A505C;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 36;
+}
+
+.Email span, .Password span {
+    color: #D32E1F;
+}
+
+.Email input, .Password input {
+    width: 100%;
+    height: 48px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #F1F1F1;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #222325;
+    margin-top: 0;
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
+
+.Password input {
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='20' viewBox='0 0 22 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.83 6.5L14 9.66V9.5C14 8.70435 13.6839 7.94129 13.1213 7.37868C12.5587 6.81607 11.7956 6.5 11 6.5H10.83ZM6.53 7.3L8.08 8.85C8.03 9.06 8 9.27 8 9.5C8 10.2956 8.31607 11.0587 8.87868 11.6213C9.44129 12.1839 10.2044 12.5 11 12.5C11.22 12.5 11.44 12.47 11.65 12.42L13.2 13.97C12.53 14.3 11.79 14.5 11 14.5C9.67392 14.5 8.40215 13.9732 7.46447 13.0355C6.52678 12.0979 6 10.8261 6 9.5C6 8.71 6.2 7.97 6.53 7.3ZM1 1.77L3.28 4.05L3.73 4.5C2.08 5.8 0.78 7.5 0 9.5C1.73 13.89 6 17 11 17C12.55 17 14.03 16.7 15.38 16.16L15.81 16.58L18.73 19.5L20 18.23L2.27 0.5M11 4.5C12.3261 4.5 13.5979 5.02678 14.5355 5.96447C15.4732 6.90215 16 8.17392 16 9.5C16 10.14 15.87 10.76 15.64 11.32L18.57 14.25C20.07 13 21.27 11.36 22 9.5C20.27 5.11 16 2 11 2C9.6 2 8.26 2.25 7 2.7L9.17 4.85C9.74 4.63 10.35 4.5 11 4.5Z' fill='%236C717A'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.Forgot-Password  {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #4A505C;
+    text-align: right;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.Masuk {
+    height: 42px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #3ECF4C;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.Daftar {
+    height: 42px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3ECF4C;
+    background-color: #E2FCD9CC;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.Atau {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #4A505C;  
+    overflow: hidden;
+    text-align: center;
+    margin: 24px 0;
+    position: relative;
+    width: 100%
+}
+
+.Atau>span {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+}
+
+.Atau>span:before,
+.Atau>span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: 1px solid;
+    width: 590px;
+    margin: 0 20px;
+    border-color:#F1F1F1;
+}
+
+.Atau>span:before {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.Atau>span:after {
+    left: 100%; 
+    margin-left: 10px;
+}
+
+.Login-Google {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #F1F1F1;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login-Google text {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #4A505C;
+    margin-left: 8px;
+}
+
+/* Desktop (>1200px) - Layout yang sekarang sudah sesuai untuk desktop */
+
+/* Laptop dan Desktop kecil (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .Header {
+        padding: 12px 60px;
+    }
+
+    .Logo {
+        padding: 12px 60px;
+    }
+
+    .Login {
+        width: 500px;
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .Header {
+        padding: 12px 40px;
+    }
+
+    .Logo {
+        padding: 12px 40px;
+    }
+
+    .Login {
+        width: 450px;
+        padding: 24px;
+    }
+
+    .Desc h1 {
+        font-size: 28px;
+    }
+}
+
+/* Mobile Large (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .Header {
+        padding: 12px 20px;
+    }
+
+    .Logo {
+        padding: 12px 20px;
+    }
+
+    .Login {
+        width: 90%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .Desc h1 {
+        font-size: 24px;
+    }
+
+    .Desc h3 {
+        font-size: 14px;
+    }
+
+    .Email p, .Password p {
+        font-size: 14px;
+    }
+
+    .Email input, .Password input {
+        font-size: 14px;
+        height: 42px;
+    }
+
+    .Masuk, .Daftar {
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .Login-Google {
+        height: 38px;
+    }
+
+    .Login-Google text {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Small (<576px) */
+@media screen and (max-width: 575px) {
+    .Header {
+        padding: 8px 16px;
+    }
+
+    .Logo {
+        padding: 8px 16px;
+    }
+
+    .Login {
+        width: 95%;
+        margin: 10px;
+        padding: 16px;
+    }
+
+    .Desc h1 {
+        font-size: 22px;
+    }
+
+    .Form {
+        padding: 16px 0;
+    }
+
+    .Atau>span:before,
+    .Atau>span:after {
+        width: 100px;
+    }
+
+    .Forgot-Password {
+        font-size: 14px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Untuk device dengan tinggi layar rendah */
+
+@media screen and (max-width: 767px) {
+    .Login {
+        width: 90%;
+        margin-top: 80px; 
+    }
+}
+
+@media screen and (max-height: 700px) {
+    body {
+        padding-top: 70px;
+        display: block;
+    }
+
+    .Login {
+        margin: 90px auto 30px auto; /* Sesuaikan margin */
+    }
+}
+
+/* Untuk device dengan tinggi layar sangat rendah */
+@media screen and (max-height: 500px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .Login {
+        margin: 80px auto 20px auto; /* Sesuaikan margin untuk layar pendek */
+        padding: 20px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .Login {
+        margin: 70px auto 15px auto;
+        padding: 15px;
+    }
+
+    .Form {
+        padding: 8px 0;
+    }
+}
+
+
+
+/* Untuk device dengan dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+    }
+
+    .Header  {
+        background-color: #242424;
+    }
+
+    .Login {
+        background-color: #242424;
+        border-color: #333;
+    }
+
+    .Desc h1 {
+        color: #ffffff;
+    }
+
+    .Desc h3 {
+        color: #cccccc;
+    }
+
+    .Email p, .Password p {
+        color: #ffffff;
+    }
+
+    .Email input, .Password input {
+        background-color: #333;
+        color: #ffffff;
+        border-color: #444;
+    }
+
+    .Atau {
+        color: #ffffff;
+    }
+
+    .Login-Google text {
+        color: #ffffff;
+    }
+}
