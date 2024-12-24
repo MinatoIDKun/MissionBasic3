@@ -66,7 +66,7 @@ body {
 
 .Desc h1,
 .Desc h3 {
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
 }
 
@@ -114,38 +114,61 @@ body {
     text-align: right;
     margin-top: 16px;
     margin-bottom: 24px;
+    text-decoration: none;
 }
 
 .Masuk {
     height: 42px;
-    font-size: 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
     color: white;
     background-color: #3ECF4C;
+    border: none;
     border-radius: 10px;
     margin-bottom: 16px;
     margin-top: 24px;
+    text-decoration: none;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .Daftar {
     height: 42px;
-    font-size: 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
     color: #3ECF4C;
     background-color: #E2FCD9CC;
+    border: none;
     border-radius: 10px;
     margin-top: 16px;
+    text-decoration: none;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.Atau {
+.Divider {
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     color: #4A505C;  
@@ -156,14 +179,14 @@ body {
     width: 100%
 }
 
-.Atau>span {
+.Divider>span {
     position: relative;
     display: inline-block;
     padding: 0;
 }
 
-.Atau>span:before,
-.Atau>span:after {
+.Divider>span:before,
+.Divider>span:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -174,17 +197,17 @@ body {
     border-color:#F1F1F1;
 }
 
-.Atau>span:before {
+.Divider>span:before {
     right: 100%;
     margin-right: 10px;
 }
 
-.Atau>span:after {
+.Divider>span:after {
     left: 100%; 
     margin-left: 10px;
 }
 
-.Login-Google {
+.btn-google {
     border-style: solid;
     border-radius: 10px;
     border-color: #F1F1F1;
@@ -192,9 +215,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.Login-Google text {
+.btn-google span {
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     color: #4A505C;
@@ -276,11 +309,11 @@ body {
         font-size: 14px;
     }
 
-    .Login-Google {
+    .btn-google {
         height: 38px;
     }
 
-    .Login-Google text {
+    .btn-google span {
         font-size: 14px;
     }
 }
@@ -309,8 +342,8 @@ body {
         padding: 16px 0;
     }
 
-    .Atau>span:before,
-    .Atau>span:after {
+    .Divider>span:before,
+    .Divider>span:after {
         width: 100px;
     }
 
@@ -371,7 +404,7 @@ body {
 
 
 /* Untuk device dengan dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background-color: #1a1a1a;
     }
@@ -403,11 +436,11 @@ body {
         border-color: #444;
     }
 
-    .Atau {
+    .Divider {
         color: #ffffff;
     }
 
-    .Login-Google text {
+    .btn-google span {
         color: #ffffff;
     }
-}
+} */

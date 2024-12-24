@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/pages/_register.css">
     <script src="script.js" defer></script>
     <title>VideoBelajar</title>
 </head>
@@ -12,21 +12,35 @@
 
 <body>
     <div class="Header">
-        <img src="assets/images/logo-videobelajar.svg" class="Logo" alt="Logo Videobelajar">
+        <img src="../assets/images/logo-videobelajar.svg" class="Logo" alt="Logo Videobelajar">
     </div>
-    
-    
-    <div class="Login">
+
+    <div class="Register-Form">
         <div class="Desc">
-            <h1>Masuk ke Akun</h1>
-            <h3>Yuk, lanjutin belajarmu di videobelajar.</h3>
+            <h1>Pendaftaran Akun</h1>
+            <h3>Yuk, daftarkan akunmu sekarang juga!</h3>
         </div>
 
 
         <div class="Form">
+            <div class="Fullname">
+                <p>Nama Lengkap <span>*</span></p>
+                <input type="fullname" required>
+            </div>
+
+
             <div class="Email">
                 <p>E-mail <span>*</span></p>
                 <input type="email" required>
+            </div>
+
+
+            <div class="Phone">
+                <p>No. Hp <span>*</span></p>
+                <select>
+                    <input type="phone" required>
+                    <option value="ID">Indonesia</option>
+                </select>
             </div>
 
 
@@ -36,12 +50,18 @@
             </div>
 
 
+            <div class="Password-Confirmation">
+                <p>Konfirmasi Kata Sandi <span>*</span></p>
+                <input type="password-confirmation" required>
+            </div>
+
+
             <a href="/reset-password" class="Forgot-Password">
                 <p>Lupa Password?</p>
             </a>
 
 
-            <button type="button" onclick="location.href='pages/homepage.html'" class="Masuk">
+            <button type="button" onclick="location.href='../index.html'" class="Masuk">
                 <p>Masuk</p>
             </button>  
        
