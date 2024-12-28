@@ -37,10 +37,12 @@
 
             <div class="Phone">
                 <p>No. Hp <span>*</span></p>
-                <select>
-                    <input type="phone" required>
-                    <option value="ID">Indonesia</option>
-                </select>
+                <div class="Phone-Input-Container">
+                    <select class="Country-Code">
+                        <option value="ID">Indonesia</option>
+                    </select>
+                    <input type="Tel">
+                </div>
             </div>
 
 
@@ -52,7 +54,7 @@
 
             <div class="Password-Confirmation">
                 <p>Konfirmasi Kata Sandi <span>*</span></p>
-                <input type="password-confirmation" required>
+                <input type="password" required>
             </div>
 
 
@@ -77,7 +79,7 @@
 
 
             <button type="button" class="btn-google" >
-                <img src="assets/images/icons/google-icon.svg" alt="Google Icon">
+                <img src="../assets/images/icons/google-icon.svg" alt="Google Icon">
                 <span>Masuk dengan Google</span>
             </button>
         </div>
