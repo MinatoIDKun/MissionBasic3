@@ -409,3 +409,165 @@ body {
     letter-spacing: 0.20000000298023224px;
     cursor: pointer;
 }
+
+/* ------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+    .Navbar {
+        padding: 12px 60px;
+    }
+
+    .cart-section,
+    .hero-1,
+    .hero-2 {
+        margin: 32px 60px;
+    }
+
+    .hero-content {
+        padding: 64px 80px;
+    }
+
+    .hero-content-2 {
+        padding: 64px 120px;
+    }
+
+    .card-items {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
+    .card-item:nth-child(2n+1) {
+        justify-self: start;
+    }
+    
+    .card-item:nth-child(2n) {
+        justify-self: end;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .Navbar {
+        padding: 12px 40px;
+    }
+
+    .cart-section,
+    .hero-1,
+    .hero-2 {
+        margin: 32px 40px;
+    }
+
+    .hero-content {
+        padding: 48px 60px;
+    }
+
+    .hero-content-2 {
+        padding: 48px 80px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .hero-title-2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .navbar-right div {
+        margin-right: 24px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .Navbar {
+        padding: 12px 20px;
+    }
+
+    .cart-section,
+    .hero-1,
+    .hero-2 {
+        margin: 24px 20px;
+    }
+
+    .hero-content,
+    .hero-content-2 {
+        padding: 32px 24px;
+    }
+
+    .card-items {
+        grid-template-columns: 1fr;
+    }
+
+    .card-item:nth-child(n) {
+        justify-self: center;
+    }
+
+    .category {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .card-item {
+        max-width: 100%;
+    }
+
+    .card-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .hero-title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .hero-title-2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .hero-description,
+    .hero-description-2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cart-header h2 {
+        font-size: 24px;
+    }
+
+    .newsletter-form button {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .navbar-right div {
+        margin-right: 16px;
+        font-size: 14px;
+    }
+
+    .category button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .card-details h1 {
+        font-size: 16px;
+    }
+
+    .card-details p {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}
